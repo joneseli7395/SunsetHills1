@@ -36,6 +36,16 @@ function seeTheSun() {
 }
 
 
+function clearText() {
+    document.getElementById("sunsetIn1").value = '';
+    document.getElementById("sunsetIn2").value = '';
+    document.getElementById("sunsetIn3").value = '';
+    document.getElementById("sunsetIn4").value = '';
+    document.getElementById("sunsetIn5").value = '';
+
+
+}
+
 
 
 
@@ -43,11 +53,11 @@ function seeTheSun() {
 //Graphing function 
 
 document.getElementById("btnSunset").addEventListener('click', function () {
-    let bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
-    let bldgHeight2 = parseInt(document.getElementById("sunsetIn2").value);
-    let bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
-    let bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
-    let bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
+    var bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
+    var bldgHeight2 = parseInt(document.getElementById("sunsetIn2").value);
+    var bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
+    var bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
+    var bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
 
     //var bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
 
@@ -55,18 +65,16 @@ document.getElementById("btnSunset").addEventListener('click', function () {
         animationEnabled: true,
         //theme: "light2", // "light1", "light2", "dark1", "dark2"
         backgroundColor: "",
-        title: {
-            text: "Building Heights"
-        },
-        axisY: {
-            title: "",
-            color: "",
 
+        axisY: {
+            color: "transparent"
+        },
+        axisY2: {
+            color: "transparent"
         },
         data: [{
             type: "column",
             color: "black",
-            showInLegend: false,
             dataPoints: [
                 { y: (bldgHeight1), label: "Building #1" },
                 { y: (bldgHeight2), label: "Building #2" },

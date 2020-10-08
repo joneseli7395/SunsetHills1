@@ -73,7 +73,7 @@
 
         <div id="chartContainer"></div>
         <br />
-        <div class="row">
+        <div class="row text-center">
             <div class="col"><input type="text" id="sunsetIn1" placeholder="Building #1" /></div>
             <div class="col"><input type="text" id="sunsetIn2" placeholder="Building #2" /></div>
             <div class="col"><input type="text" id="sunsetIn3" placeholder="Building #3" /></div>
@@ -81,8 +81,11 @@
             <div class="col"><input type="text" id="sunsetIn5" placeholder="Building #5" /></div>
         </div><br />
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <button class="btn btn-primary" id="btnSunset" onclick="seeTheSun()">Click Me</button>
+            <div class="col-lg-6 text-center">
+                <button class="btn bg-dark" id="btnSunset" onclick="seeTheSun()"><h6>Set the Sun</h6></button>
+            </div>
+            <div class="col text-center">
+                <button class="btn bg-dark" onclick="clearText()"><h6>New Heights</h6></button>
             </div>
         </div>
     </div>
