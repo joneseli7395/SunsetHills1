@@ -65,7 +65,7 @@ document.getElementById("btnSunset").addEventListener('click', function () {
         },
         data: [{
             type: "column",
-            color: "transparent",
+            color: "black",
             showInLegend: false,
             dataPoints: [
                 { y: (bldgHeight1), label: "Building #1" },
