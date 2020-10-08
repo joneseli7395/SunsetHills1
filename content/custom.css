@@ -1,0 +1,10 @@
+﻿body {
+    background: linear-gradient(#808080, #87A9E6, #808080);
+    display: block;
+}
+#chartContainer {
+    background: linear-gradient(90deg, #E6D881, #8CB0E6, #87A9E6);
+    height: 370px;
+    width: 100%;
+    border: solid black 2px;
+}
