@@ -35,9 +35,6 @@
                         <a class="nav-link" href="/Index.html"><i class="bx bx-home"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Solve.html"><i class="bx bxs-binoculars"></i>See It</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/Code.html"><i class="bx bx-code-alt"></i>Code</a>
                     </li>
                     <li class="nav-item">
@@ -55,12 +52,44 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">The Title of the Exercise</h1>
-                <p class="lead">You can customize the template colors</p>
+                <h1 class="mt-5">The Exercise</h1>
+                <p class="lead">This page will display your JS exercise</p>
                 <ul class="list-unstyled">
-                    <li>This page is for a description of the Javascript exercise</li>
-                    <li>You should include information about what the code does</li>
+                    <li>The Javascript Exercise</li>
+                    <li>Is placed on this page</li>
                 </ul>
+            </div>
+        </div>
+    </div><br />
+
+    <div class="container">
+        <!--<div class="row">
+            <div class="col"><p id="sunsetOut1"></p></div>
+            <div class="col"><p id="sunsetOut2"></p></div>
+            <div class="col"><p id="sunsetOut3"></p></div>
+            <div class="col"><p id="sunsetOut4"></p></div>
+            <div class="col"><p id="sunsetOut5"></p></div>
+        </div>-->
+
+        <div id="chartContainer"></div>
+        <br />
+        <div class="row">
+            <div class="col"><input type="text" id="sunsetIn1" placeholder="Building #1" /></div>
+            <div class="col"><input type="text" id="sunsetIn2" placeholder="Building #2" /></div>
+            <div class="col"><input type="text" id="sunsetIn3" placeholder="Building #3" /></div>
+            <div class="col"><input type="text" id="sunsetIn4" placeholder="Building #4" /></div>
+            <div class="col"><input type="text" id="sunsetIn5" placeholder="Building #5" /></div>
+        </div><br />
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button class="btn btn-primary" id="btnSunset" onclick="seeTheSun()">Click Me</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span id="sunsetOut"></span>
             </div>
         </div>
     </div>
@@ -72,6 +101,9 @@
 
     <!--Custom JS-->
     <script src="/scripts/custom.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="/scripts/jquery.canvasjs.min.js"></script>
+
 </body>
 
 </html>
