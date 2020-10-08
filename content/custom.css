@@ -1,5 +1,5 @@
 ﻿body {
-    background: linear-gradient(#808080, #87A9E6, #808080);
+    background-color: rgba(230, 216, 129, 0.56);
     display: block;
 }
 #chartContainer {
