@@ -77,7 +77,7 @@ document.getElementById("btnSunset").addEventListener('click', function () {
             labelFontColor: "transparent"
         },
         data: [
-            {                                                //Two grpahs overlayed 
+            {                                                //Two graphs overlayed 
                 type: "column",
                 color: "grey",
                 bevelEnabled: true,

@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: rgba(230, 216, 129, 0.56);
+    background:rgba(230, 216, 129, 0.56);
     display: block;
 }
 #chartContainer {
