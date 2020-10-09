@@ -9,7 +9,7 @@
 
 //loop over array
 
-
+//Collecting input into array
 function seeTheSun() {
 
     let bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
@@ -36,6 +36,7 @@ function seeTheSun() {
     document.getElementById("buildingCnt").innerHTML = `${newArray.join(', ')}`;
 }
 
+//Clear function 
 function clearText() {
     document.getElementById("sunsetIn1").value = '';
     document.getElementById("sunsetIn2").value = '';
@@ -46,9 +47,6 @@ function clearText() {
     document.getElementById("sunsetOut").innerHTML = "";
     document.getElementById("buildingCnt").innerHTML = "";
 }
-
-
-
 
 
 //Graphing function 
@@ -79,7 +77,7 @@ document.getElementById("btnSunset").addEventListener('click', function () {
             labelFontColor: "transparent"
         },
         data: [
-            {
+            {                                                //Two grpahs overlayed 
                 type: "column",
                 color: "grey",
                 bevelEnabled: true,

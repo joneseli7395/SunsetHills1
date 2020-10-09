@@ -3,34 +3,39 @@
     display: block;
 }
 #chartContainer {
-    /*background: linear-gradient(90deg, #E6D881, #8CB0E6, #87A9E6);*/
     background-image: url('../images/sunsethillsback.png');
     height: 370px;
     width: 100%;
     border: solid black 2px;
 }
-button {
-    color: #fff!important;
-}
 h1 {
     font-size: 70px!important;
     font-weight: bold;
-    color:
 }
+
 .card-body {
     background-color: #fff;
     min-height: 200px;
     outline: solid black 2px;
 }
 .card-header {
-    background: linear-gradient(45deg, rgba(80, 129, 144, 0.80), rgba(88, 144, 161, 0.80), rgba(110, 171, 190, 0.80));
+    background: linear-gradient(45deg, rgba(151, 205, 228, 0.90), rgba(32, 131, 21, 0.88));
+    outline: solid black 2px;
+}
+.card-footer {
     outline: solid black 2px;
 }
 .howMany {
-    font-size:50px;
+    font-size:100px;
     font-weight: bold;
 }
 .whichOnes {
-    font-size:40px;
+    font-size:60px;
     font-weight: bold;
+}
+.card {
+    border-radius: 20px 20px 20px 20px!important;
+}
+h6 {
+    color: #fff!important;
 }
