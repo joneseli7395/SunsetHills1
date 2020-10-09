@@ -68,7 +68,7 @@ document.getElementById("btnSunset").addEventListener('click', function () {
             gridColor: "transparent",
             lineColor: "transparent",
             tickColor: "transparent",
-            labelFontColor: "transparent"
+            labelFontWeight: "bold",
         },
         axisY: {
             gridColor: "transparent",
