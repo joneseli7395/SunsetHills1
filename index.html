@@ -59,7 +59,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5"><i class="icofont-sun-set"></i>Sunset Hills<i class="bx bxs-building"></i></h1><br />
+                <h1 class="mt-5"><i class="icofont-sun-set"></i>Sunset Hills<i class="bx bxs-building"></i></h1><hr />
                 <h4>You control each building's ability to enjoy the sunset. Enter a height for each and Set the Sun!</h4>
             </div>
         </div><br />
@@ -88,16 +88,17 @@
             <div class="col"><input type="text" id="sunsetIn4" placeholder="Building #4" /></div>
             <div class="col"><input type="text" id="sunsetIn5" placeholder="Building #5" /></div>
         </div><br />
-        <div class="row">
-            <div class="col text-center">
-                <button class="btn bg-dark" id="btnSunset" onclick="seeTheSun()"><h6>Set the Sun</h6></button>
-            </div>
-        </div><br />
-        <div class="row">
-            <div class="col text-center">
-                <button class="btn bg-dark" onclick="clearText()"><h6> Clear </h6></button>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn bg-dark" id="btnSunset" onclick="seeTheSun()"><h6>Set the Sun</h6></button>
         </div>
+    </div><br />
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn bg-dark" onclick="clearText()"><h6> Clear </h6></button>
+        </div>
+    </div>
     </div><br /><br />
     <div class="container">
         <div class="row">
@@ -106,7 +107,7 @@
                     <div class="card-header">
                         <h5>How many see the sunset?</h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="card-body">
                         <p class="howMany"><span id="sunsetOut"></span></p>
                     </div>
                 </div>
@@ -117,7 +118,7 @@
                     <div class="card-header">
                         <h5>Which buildings have a view?</h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="card-body">
                         <p class="whichOnes"><span id="buildingCnt"></span></p>
                     </div>
                 </div>

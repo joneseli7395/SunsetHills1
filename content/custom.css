@@ -13,7 +13,7 @@ h1 {
     font-weight: bold;
 }
 
-.card-body {
+#card-body {
     background-color: #fff;
     height: 230px;
     outline: solid black 2px;
