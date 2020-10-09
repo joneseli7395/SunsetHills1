@@ -15,7 +15,7 @@ h1 {
 
 .card-body {
     background-color: #fff;
-    min-height: 200px;
+    height: 230px;
     outline: solid black 2px;
 }
 .card-header {
