@@ -115,7 +115,7 @@ document.getElementById("sunsetIn1").addEventListener('keydown', function (evt) 
 
     var character = (evt.which) ? evt.which : evt.keycode;
     if (character >= 48 && character <= 57 ||
-        character === 8) {
+        character === 8 || character === 9) {
         return true;
     }
     else {
@@ -128,7 +128,7 @@ document.getElementById("sunsetIn2").addEventListener('keydown', function (evt) 
 
     var character = (evt.which) ? evt.which : evt.keycode;
     if (character >= 48 && character <= 57 ||
-        character === 8) {
+        character === 8 || character === 9) {
         return true;
     }
     else {
@@ -141,7 +141,7 @@ document.getElementById("sunsetIn3").addEventListener('keydown', function (evt) 
 
     var character = (evt.which) ? evt.which : evt.keycode;
     if (character >= 48 && character <= 57 ||
-        character === 8) {
+        character === 8 || character === 9) {
         return true;
     }
     else {
@@ -154,7 +154,7 @@ document.getElementById("sunsetIn4").addEventListener('keydown', function (evt) 
 
     var character = (evt.which) ? evt.which : evt.keycode;
     if (character >= 48 && character <= 57 ||
-        character === 8) {
+        character === 8 || character === 9) {
         return true;
     }
     else {
@@ -167,7 +167,7 @@ document.getElementById("sunsetIn5").addEventListener('keydown', function (evt) 
 
     var character = (evt.which) ? evt.which : evt.keycode;
     if (character >= 48 && character <= 57 ||
-        character === 8) {
+        character === 8 || character === 9) {
         return true;
     }
     else {
