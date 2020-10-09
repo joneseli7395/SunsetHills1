@@ -18,10 +18,13 @@ h1 {
     color:
 }
 .card-body {
-    background-color: rgba(230, 216, 129, 0.56);
+    background-color: #fff;
+    min-height: 200px;
+    outline: solid black 2px;
 }
 .card-header {
-    background-color: rgba(230, 216, 129, 0.56);
+    background: linear-gradient(45deg, rgba(80, 129, 144, 0.80), rgba(88, 144, 161, 0.80), rgba(110, 171, 190, 0.80));
+    outline: solid black 2px;
 }
 .howMany {
     font-size:50px;
