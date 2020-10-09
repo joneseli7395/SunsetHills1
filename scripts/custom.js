@@ -19,21 +19,21 @@ function seeTheSun() {
     let bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
 
     let bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
-    let newArray = [];
-    let count = 1;
     let max = bldgArray[0];
-    newArray.push(max);
+    let count = 1;
+    let newArray = [1];
+    //newArray.push(max);
 
-    for (let i = 0; i < bldgArray.length; i++) {
+    for (let i = 1; i < bldgArray.length; i++) {
 
         if (bldgArray[i] > max) {
             count++;
-            newArray.push(bldgArray[i]);
+            newArray.push(i+1);
             max = bldgArray[i];
         }
     }
     document.getElementById("sunsetOut").innerHTML = `${count}`;
-    document.getElementById("buildingCnt").innerHTML = `${newArray.join(', ')}`;
+    document.getElementById("buildingCnt").innerHTML = `#${newArray.join(', #')}`;
 }
 
 //Clear function 
@@ -111,4 +111,68 @@ document.getElementById("btnSunset").addEventListener('click', function () {
 });
 
 
+document.getElementById("sunsetIn1").addEventListener('keydown', function (evt) {
+
+    var character = (evt.which) ? evt.which : evt.keycode;
+    if (character >= 48 && character <= 57 ||
+        character === 8) {
+        return true;
+    }
+    else {
+        evt.preventDefault();
+        return false;
+    }
+})
+
+document.getElementById("sunsetIn2").addEventListener('keydown', function (evt) {
+
+    var character = (evt.which) ? evt.which : evt.keycode;
+    if (character >= 48 && character <= 57 ||
+        character === 8) {
+        return true;
+    }
+    else {
+        evt.preventDefault();
+        return false;
+    }
+})
+
+document.getElementById("sunsetIn3").addEventListener('keydown', function (evt) {
+
+    var character = (evt.which) ? evt.which : evt.keycode;
+    if (character >= 48 && character <= 57 ||
+        character === 8) {
+        return true;
+    }
+    else {
+        evt.preventDefault();
+        return false;
+    }
+})
+
+document.getElementById("sunsetIn4").addEventListener('keydown', function (evt) {
+
+    var character = (evt.which) ? evt.which : evt.keycode;
+    if (character >= 48 && character <= 57 ||
+        character === 8) {
+        return true;
+    }
+    else {
+        evt.preventDefault();
+        return false;
+    }
+})
+
+document.getElementById("sunsetIn5").addEventListener('keydown', function (evt) {
+
+    var character = (evt.which) ? evt.which : evt.keycode;
+    if (character >= 48 && character <= 57 ||
+        character === 8) {
+        return true;
+    }
+    else {
+        evt.preventDefault();
+        return false;
+    }
+})
 
