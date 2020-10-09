@@ -22,7 +22,7 @@ function seeTheSun() {
     let newArray = [];
     let count = 1;
     let max = bldgArray[0];
-        newArray.push(max);
+    newArray.push(max);
 
     for (let i = 0; i < bldgArray.length; i++) {
 
@@ -32,9 +32,9 @@ function seeTheSun() {
             max = bldgArray[i];
         }
     }
-    document.getElementById("sunsetOut").innerHTML = `${count} These get sun: [${newArray.join(', ')}]`;
+    document.getElementById("sunsetOut").innerHTML = `${count}`;
+    document.getElementById("buildingCnt").innerHTML = `${newArray.join(', ')}`;
 }
-
 
 function clearText() {
     document.getElementById("sunsetIn1").value = '';
@@ -43,7 +43,8 @@ function clearText() {
     document.getElementById("sunsetIn4").value = '';
     document.getElementById("sunsetIn5").value = '';
 
-
+    document.getElementById("sunsetOut").innerHTML = "";
+    document.getElementById("buildingCnt").innerHTML = "";
 }
 
 
@@ -65,25 +66,48 @@ document.getElementById("btnSunset").addEventListener('click', function () {
         animationEnabled: true,
         //theme: "light2", // "light1", "light2", "dark1", "dark2"
         backgroundColor: "",
-
+        axisX: {
+            gridColor: "transparent",
+            lineColor: "transparent",
+            tickColor: "transparent",
+            labelFontColor: "transparent"
+        },
         axisY: {
-            color: "transparent"
+            gridColor: "transparent",
+            lineColor: "transparent",
+            tickColor: "transparent",
+            labelFontColor: "transparent"
         },
-        axisY2: {
-            color: "transparent"
-        },
-        data: [{
-            type: "column",
-            color: "black",
-            dataPoints: [
-                { y: (bldgHeight1), label: "Building #1" },
-                { y: (bldgHeight2), label: "Building #2" },
-                { y: (bldgHeight3), label: "Building #3" },
-                { y: (bldgHeight4), label: "Building #4" },
-                { y: (bldgHeight5), label: "Building #5" },
-            ],
-        }]
+        data: [
+            {
+                type: "column",
+                color: "grey",
+                bevelEnabled: true,
+                dataPoints: [
+                    { y: (bldgHeight1), label: "Building #1" },
+                    { y: (bldgHeight2), label: "Building #2" },
+                    { y: (bldgHeight3), label: "Building #3" },
+                    { y: (bldgHeight4), label: "Building #4" },
+                    { y: (bldgHeight5), label: "Building #5" },
+                ],
+            },
+            {
+                markerColor: "transparent",
+                markerSize: 0,
+                type: "area",
+                color: "black",
+                lineThickness: 0,
+                fillOpacity: .5, //**Try various Opacity values **//
+                dataPoints: [
+                    { x: 0, y: (bldgHeight1) },
+                    { x: 1, y: (bldgHeight2) },
+                    { x: 2, y: (bldgHeight3) },
+                    { x: 3, y: (bldgHeight4) },
+                    { x: 4, y: (bldgHeight5) },
+                ]
+            }],
     });
+
     chart.render();
 
 });

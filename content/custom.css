@@ -12,3 +12,22 @@
 button {
     color: #fff!important;
 }
+h1 {
+    font-size: 70px!important;
+    font-weight: bold;
+    color:
+}
+.card-body {
+    background-color: rgba(230, 216, 129, 0.56);
+}
+.card-header {
+    background-color: rgba(230, 216, 129, 0.56);
+}
+.howMany {
+    font-size:50px;
+    font-weight: bold;
+}
+.whichOnes {
+    font-size:40px;
+    font-weight: bold;
+}
