@@ -9,3 +9,5 @@ The "Clear Heights" button will clear the input and result boxes, allowing the u
 ***Note:***
 - The graph template was imported from [canvasJS](https://canvasjs.com/) and modified/styled by me
 - The code snippets on the Code page are powered by [prismJS](https://prismjs.com/)
+
+***For any questions or unaddressed issues found, use the contact form located at the bottom of my [portfolio](https://www.ejdevspot.com/) page to get in touch with me.***
