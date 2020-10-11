@@ -1,6 +1,6 @@
-# Sunset Hills Application
+# Sunset Hills
 
-## A unique stand-alone application designed to accept user inputs and respond with a custom solution
+## A unique stand-alone website designed to accept user inputs and respond with a custom solution
 
 This site is compiled of two HTML pages that each serve their own purpose. You will land on the index, which will be the page that you interact with. Use the input boxes to determine each of the five building's heights. 
 The "Initiate Sunset" button will call two functions. One to show the column chart, and one to perform the loop comparison of inputs. 
