@@ -88,21 +88,6 @@ document.getElementById("btnSunset").addEventListener('click', function () {
                     { y: (bldgHeight4), label: "Building #4" },
                     { y: (bldgHeight5), label: "Building #5" },
                 ],
-            },
-            {
-                markerColor: "transparent",
-                markerSize: 0,
-                type: "area",
-                color: "black",
-                lineThickness: 0,
-                fillOpacity: .5, //**Try various Opacity values **//
-                dataPoints: [
-                    { x: 0, y: (bldgHeight1) },
-                    { x: 1, y: (bldgHeight2) },
-                    { x: 2, y: (bldgHeight3) },
-                    { x: 3, y: (bldgHeight4) },
-                    { x: 4, y: (bldgHeight5) },
-                ]
             }],
     });
 
