@@ -12,23 +12,23 @@
 //Collecting input into array
 function seeTheSun() {
 
-    let bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
-    let bldgHeight2 = parseInt(document.getElementById("sunsetIn2").value);
-    let bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
-    let bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
-    let bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
+    var bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
+    var bldgHeight2 = parseInt(document.getElementById("sunsetIn2").value);
+    var bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
+    var bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
+    var bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
 
-    let bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
-    let max = bldgArray[0];
-    let count = 1;
-    let newArray = [1];
+    var bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
+    var max = bldgArray[0];
+    var count = 1;
+    var newArray = [1];
     //newArray.push(max);
 
-    for (let i = 1; i < bldgArray.length; i++) {
+    for (var i = 1; i < bldgArray.length; i++) {
 
         if (bldgArray[i] > max) {
             count++;
-            newArray.push(i+1);
+            newArray.push(i + 1);
             max = bldgArray[i];
         }
     }
@@ -49,7 +49,9 @@ function clearText() {
 }
 
 
-//Graphing function 
+
+
+//Graphing function
 
 document.getElementById("btnSunset").addEventListener('click', function () {
     var bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
@@ -57,6 +59,25 @@ document.getElementById("btnSunset").addEventListener('click', function () {
     var bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
     var bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
     var bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
+
+    var bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
+    var max = bldgArray[0];
+    var count = 1;
+    var newArray = [1];
+
+    for (var i = 1; i < bldgArray.length; i++) {
+
+        if (bldgArray[i] > max) {
+            count++;
+            newArray.push(i + 1);
+            max = bldgArray[i];
+        }
+    }
+    document.getElementById("sunsetOut").innerHTML = `${count}`;
+    document.getElementById("buildingCnt").innerHTML = `#${newArray.join(', #')}`;
+
+
+
 
     //var bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
 
@@ -79,8 +100,8 @@ document.getElementById("btnSunset").addEventListener('click', function () {
         data: [
             {                                                //Two graphs overlaid 
                 type: "column",
-                color: "grey",
                 bevelEnabled: true,
+                color: "grey",
                 dataPoints: [
                     { y: (bldgHeight1), label: "Building #1" },
                     { y: (bldgHeight2), label: "Building #2" },
@@ -88,12 +109,15 @@ document.getElementById("btnSunset").addEventListener('click', function () {
                     { y: (bldgHeight4), label: "Building #4" },
                     { y: (bldgHeight5), label: "Building #5" },
                 ],
+
             }],
     });
 
     chart.render();
-
 });
+
+
+
 
 
 document.getElementById("sunsetIn1").addEventListener('keydown', function (evt) {
