@@ -10,43 +10,34 @@
 //loop over array
 
 //Collecting input into array
-function seeTheSun() {
+//function seeTheSun() {
 
-    var bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
-    var bldgHeight2 = parseInt(document.getElementById("sunsetIn2").value);
-    var bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
-    var bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
-    var bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
+//    var bldgHeight1 = parseInt(document.getElementById("sunsetIn1").value);
+//    var bldgHeight2 = parseInt(document.getElementById("sunsetIn2").value);
+//    var bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
+//    var bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
+//    var bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
 
-    var bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
-    var max = bldgArray[0];
-    var count = 1;
-    var newArray = [1];
-    //newArray.push(max);
+//    var bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
+//    var max = bldgArray[0];
+//    var count = 1;
+//    var newArray = [1];
+//    //newArray.push(max);
 
-    for (var i = 1; i < bldgArray.length; i++) {
+//    for (var i = 1; i < bldgArray.length; i++) {
 
-        if (bldgArray[i] > max) {
-            count++;
-            newArray.push(i + 1);
-            max = bldgArray[i];
-        }
-    }
-    document.getElementById("sunsetOut").innerHTML = `${count}`;
-    document.getElementById("buildingCnt").innerHTML = `#${newArray.join(', #')}`;
-}
+//        if (bldgArray[i] > max) {
+//            count++;
+//            newArray.push(i + 1);
+//            max = bldgArray[i];
+//        }
+//    }
+//    document.getElementById("sunsetOut").innerHTML = `${count}`;
+//    document.getElementById("buildingCnt").innerHTML = `#${newArray.join(', #')}`;
+//}
 
 //Clear function 
-function clearText() {
-    document.getElementById("sunsetIn1").value = '';
-    document.getElementById("sunsetIn2").value = '';
-    document.getElementById("sunsetIn3").value = '';
-    document.getElementById("sunsetIn4").value = '';
-    document.getElementById("sunsetIn5").value = '';
 
-    document.getElementById("sunsetOut").innerHTML = "";
-    document.getElementById("buildingCnt").innerHTML = "";
-}
 
 
 
@@ -59,6 +50,7 @@ document.getElementById("btnSunset").addEventListener('click', function () {
     var bldgHeight3 = parseInt(document.getElementById("sunsetIn3").value);
     var bldgHeight4 = parseInt(document.getElementById("sunsetIn4").value);
     var bldgHeight5 = parseInt(document.getElementById("sunsetIn5").value);
+
 
     var bldgArray = [bldgHeight1, bldgHeight2, bldgHeight3, bldgHeight4, bldgHeight5];
     var max = bldgArray[0];
@@ -116,7 +108,16 @@ document.getElementById("btnSunset").addEventListener('click', function () {
     chart.render();
 });
 
+function clearText() {
+    document.getElementById("sunsetIn1").value = '';
+    document.getElementById("sunsetIn2").value = '';
+    document.getElementById("sunsetIn3").value = '';
+    document.getElementById("sunsetIn4").value = '';
+    document.getElementById("sunsetIn5").value = '';
 
+    document.getElementById("sunsetOut").innerHTML = "";
+    document.getElementById("buildingCnt").innerHTML = "";
+}
 
 
 
@@ -184,4 +185,5 @@ document.getElementById("sunsetIn5").addEventListener('keydown', function (evt) 
         return false;
     }
 })
+
 
